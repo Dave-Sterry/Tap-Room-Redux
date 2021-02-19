@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Keg(props) {
+  // const {whenKegClicked} =props;
   return(
   <React.Fragment>
     <div onClick = {() => props.whenKegClicked(props.id)}>
