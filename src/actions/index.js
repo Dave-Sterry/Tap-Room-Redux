@@ -28,5 +28,4 @@ export const selectKeg = (keg) => ({
 
 export const deselectKeg = (keg) => ({
   type: c.DESELECT_KEG,
-  keg
 });
