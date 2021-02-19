@@ -11,6 +11,6 @@ describe('selectedKegReducer', () => {
       id: 1
   }
   test('should return default state if no type is recognized', () =>{
-    expect(selectedKegReducer({}, {type:null})).toEqual({};)
+    expect(selectedKegReducer({}, {type:null})).toEqual({})
   });
 })
