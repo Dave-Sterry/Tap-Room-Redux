@@ -16,6 +16,7 @@ describe("post list actions", () => {
 
   it('addKeg should create ADD_KEG action', () => {
     expect(a.addKeg({ name: 'Street Cider', brand: 'VanBeer', price: 3,alcoholContent: "5.3", beer: 23, id: 1})).toEqual({
+      type: "ADD_KEG",
       name: 'Street Cider',
       brand: 'VanBeer',
       price: 3,
