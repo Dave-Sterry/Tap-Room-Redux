@@ -3,12 +3,15 @@
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
 </div>
 
-### A React website by David Sterry 
-Initialized on 02/12/21
-Last updated on 02/12/21
+
+<h2 align = 'center'>A React website by David Sterry </h2>
+<p align = 'center'>
+Initialized on 02/19/21
+Last updated on 02/19/21
+</p>
 
 ## 📖  Description
-Jean Claude Van Damme has launched a new Belegian Beer Tap room in Portland. He needed a website to help keep track of his kegs. This site lets him create, update, delete kegs, as well as keep track of how many beers are in an individual keg. 
+Jean Claude Van Damme has launched a new Belegian Beer Tap room in Portland. He needed a website to help keep track of his kegs. This site lets him create, update, delete kegs, as well as keep track of how many beers are in an individual keg. This a React application that handles state using Redux. This was an independent project for Epicodus 
 
 ## **User Stories**
 * Jean Claude should be able to Create, Read, Update, and Delete Kegs for his tap room
@@ -71,9 +74,6 @@ You will also see any lint errors in the console.
 <img src ="./readmeassets/TapRoom.png">
 
 
-
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 🐛 Known Bugs
@@ -97,10 +97,10 @@ There are no known bugs
 
 
 ## 📫 Support and contact details
-Authored by: David Sterry
-If you have any issues during installation please follow the set up instructions again. Contact me at sterry.david@gmail.com in regards to this project
+Authored by: David Sterry  
+If you have any issues during installation please follow the set up instructions again. - Email me at [David Sterry](mailto:sterry.david@gmail.com) in regards to this project. 
 
-## **License**
+## 📘 License
 
 This project is licensed under **MIT 2.0**
 Permission is hereby granted, free of charge, to any person obtaining a copy
