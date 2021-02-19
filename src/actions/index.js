@@ -23,10 +23,10 @@ export const addKeg = (keg) => {
 
 export const selectKeg = (keg) => ({
   type: c.SELECT_KEG,
-  KEG
+  keg
 });
 
 export const deselectKeg = (keg) => ({
   type: c.DESELECT_KEG,
-  KEG
+  keg
 });
