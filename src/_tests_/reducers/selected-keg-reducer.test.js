@@ -19,5 +19,10 @@ describe('selectedKegReducer', () => {
     const action = a.selectKeg(keg);
     expect(selectedKegReducer({}, action)).toEqual(keg);
   });
+
+  test('should return null when DESELECT_KEG is called', () => {
+    action = a.deselectKeg();
+    expect(selectedKegReducer({}, action)).toEqual(null);
+  })
 })
 
