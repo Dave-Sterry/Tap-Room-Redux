@@ -11,11 +11,11 @@ export const addKeg = (keg) => {
   const {name, brand, price, alcoholContent, beer, id } = keg;
   return {
     type: "ADD_KEG",
-    name: 'Street Cider',
-    brand: 'VanBeer',
-    price: 3,
-    alcoholContent: "5.3",
-    beer: 23,
+    name,
+    brand,
+    price,
+    alcoholContent,
+    beer,
     id: 1
   }
 }
