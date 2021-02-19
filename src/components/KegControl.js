@@ -12,21 +12,19 @@ class KegControl extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      selectedKeg: null,
       editing: false
     };
   }
 
   handleClick =() =>{
     if (this.state.selectedKeg != null){
-      this.setState({
-        selectedKeg:null,
-        editing: false
-      });
+     const { dispatch } =this.props;
+     const action = a.deselectKeg();
+     dispatch(action)
     }else {
       const { dispatch } = this.props;
       const action = a.toggleForm();
-        dispatch(action);
+      dispatch(action);
       }
     }
   
@@ -41,8 +39,10 @@ class KegControl extends React.Component{
   
 
   handleChangingSelectedKeg = (id) => {
+    const { dispatch } = this.props;
     const selectedKeg = this.props.masterKegList[id];
-    this.setState({selectedKeg: selectedKeg});
+    const action = a.selectKeg(selectedKeg)
+    dispatch(action);
   }
 
   handleEditClick = () => {
@@ -66,26 +66,14 @@ class KegControl extends React.Component{
     this.setState({selectedKeg: null});
   }
 
-  handleBuyBeer = () => {
-    const newKeg = this.state.selectedKeg;
-    const adjustedKeg = { ...newKeg, beer: newKeg.beer -1 }
-    const editedMasterKegList = this.state.masterKegList.filter(keg => keg.id !== this.state.selectedKeg.id).concat(adjustedKeg);
-    this.setState({
-      masterKegList: editedMasterKegList,
-      selectedKeg: adjustedKeg
-    });
+  handleBuyBeer = (id) => {
+    const { dispatch } = this.props;
+    const thisKeg = this.props.masterKegList[id];
+    thisKeg.beer = thisKeg.beer - 1;
+    const action = a.addKeg(thisKeg);
+    dispatch(action);
   }
 
-  // handleRestockKegClick =(id, r) => {
-  //   console.log('reached restock');
-  //   const selectedKeg = this.state.selectedKeg;
-  //   const kegToRestock = Object.assign({}, selectedKeg, {quantity: selectedKeg.quantity +1});
-  //   const editedMasterKegList = this.state.masterKegList.filter(keg=>keg.id !== this.state.selectedKeg.id).concat(kegToRestock);
-  //   this.setState({
-  //     masterKegList: editedMasterKegList,
-  //     selectedKeg: kegToRestock
-  //   });
-  // }
 
   render(){
     let currentlyVisibleState = null;
