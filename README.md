@@ -1,4 +1,4 @@
-# Jean Claude Van Damme's Taproom
+# Jean Claude Van Damme's Taproom- REDUX
 <div align="center">
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
 </div>
