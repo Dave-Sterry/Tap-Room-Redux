@@ -22,7 +22,7 @@ function KegList(props) {
 
 KegList.propTypes ={
   keglist: PropTypes.object,
-  onKegSelection: PropTypes.func
+  onKegSelection: PropTypes.func,
 };
 
 export default KegList;
