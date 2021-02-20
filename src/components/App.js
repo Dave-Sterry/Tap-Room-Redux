@@ -13,9 +13,9 @@ function App() {
     <React.Fragment>
       <Header />
       <Container>
-        {/* <div style = {controlStyles}> */}
+        <div style = {controlStyles}>
           <KegControl />
-        {/* </div> */}
+        </div>
       </Container>
         <div style = {controlStyles}>
           < Body />

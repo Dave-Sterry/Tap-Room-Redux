@@ -77,7 +77,8 @@ You will also see any lint errors in the console.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 🐛 Known Bugs
-There are no known bugs
+1. Delete Keg doesn't not curently work
+2. Selling beer from a keg only works one time, then it throws an error in the console.
 
 ## 🛠️ Technologies Used
 
