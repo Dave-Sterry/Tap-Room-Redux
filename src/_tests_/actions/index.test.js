@@ -26,4 +26,9 @@ describe("post list actions", () => {
       id: 1
     });
   });
+  test('seletKeg should create SELECT_KEG action', () => {
+    expect(a.selectKeg()).toEqual({
+      type: c.SELECT_KEG
+    });
+  });
 });
