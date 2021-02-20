@@ -110,7 +110,7 @@ const mapStateToProps = state =>{
   return{
     masterKegList: state.masterKegList,
     formVisibleOnPage: state.formVisibleOnPage,
-    selectedKeg: state.selectKeg
+    selectedKeg: state.selectedKeg
   }
 }
 KegControl = connect(mapStateToProps)(KegControl);
