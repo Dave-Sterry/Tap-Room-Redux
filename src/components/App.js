@@ -6,7 +6,12 @@ import {Container} from "react-bootstrap";
 
 function App() {
 
-  const controlStyles ={
+  const bodyStyles ={
+    textAlign: 'center',
+    backgroundColor: "#e0af26",
+    border:'solid 2px'
+  }
+  const controlStyles= {
     textAlign: 'center'
   }
   return (
@@ -17,7 +22,7 @@ function App() {
           <KegControl />
         </div>
       </Container>
-        <div style = {controlStyles}>
+        <div style = {bodyStyles}>
           < Body />
         </div>
     </React.Fragment>
